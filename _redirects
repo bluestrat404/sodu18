@@ -1,12 +1,13 @@
 # Redirects from what the browser requests to what we serve
 /sermons/feed              http://sermons.southdurham.org/sermons/feed/
-/groups			   https://sodu.churchcenteronline.com/groups
 /weekender		   https://sodu.churchcenter.com/registrations/events
-/dedication		   https://docs.google.com/forms/d/e/1FAIpQLSePFUxp5zWpocrBFK5AZCFW-DSMmbvQzYN6S5fbj4W4M4w6Ng/viewform?usp=sf_link
-/meet-and-greet		   http://sermons.southdurham.org/2018/03/01/meet-and-greet-with-aaron-mattern-candidate-for-director-of-operations-and-family-ministries-position/
-/servesodu		   http://www.signupgenius.com/go/30e0e49aca728aaf49-spring
 /support/aaron		   https://sodu.churchcenter.com/giving/to/personal-support-aaron-mattern
 /give			   https://sodu.churchcenter.com/giving
-/seminar		   https://docs.google.com/forms/d/e/1FAIpQLSdmB4GOK9TF3lHevMb482bBVWCjj3IgRPKUtpMAT4F7JD6GDQ/viewform?usp=sf_link
-/hungary		   https://docs.google.com/forms/d/e/1FAIpQLSfyWa0XbG01MFPC15TwSbpq4t7sogmqEe3ku9zNwZ7EVmVvfA/viewform?usp=sf_link
-/snsignup		   https://www.signupgenius.com/go/4090c48aeac2aa0f58-south1
+
+# /groups			   https://sodu.churchcenteronline.com/groups
+# /dedication		   https://docs.google.com/forms/d/e/1faipqlsepfuxp5zwpocrbfk5azcfw-dsmmbvqzyn6s5fbj4w4m4w6ng/viewform?usp=sf_link
+# /meet-and-greet		   http://sermons.southdurham.org/2018/03/01/meet-and-greet-with-aaron-mattern-candidate-for-director-of-operations-and-family-ministries-position/
+# /servesodu		   http://www.signupgenius.com/go/30e0e49aca728aaf49-spring
+# /seminar		   https://docs.google.com/forms/d/e/1FAIpQLSdmB4GOK9TF3lHevMb482bBVWCjj3IgRPKUtpMAT4F7JD6GDQ/viewform?usp=sf_link
+# /hungary		   https://docs.google.com/forms/d/e/1FAIpQLSfyWa0XbG01MFPC15TwSbpq4t7sogmqEe3ku9zNwZ7EVmVvfA/viewform?usp=sf_link
+# /snsignup		   https://www.signupgenius.com/go/4090c48aeac2aa0f58-south1
