@@ -1292,6 +1292,10 @@ body {
     .\-1u\28xsmall\29 {
         margin-left: 8.33333%
     }
+    .image.right {
+        max-width: 100% !important;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 360px) {
