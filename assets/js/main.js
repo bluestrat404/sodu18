@@ -23,13 +23,17 @@
 			$banner = $('#banner');
 
 		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+        // Why artificially slow down the page just for a pretty animation?
+			//$body.addClass('is-loading');
 
-			$window.on('load', function() {
+            //window.setTimeout(function() {
+            //    $body.removeClass('is-loading');
+            //}, 10);
+			/* $window.on('load', function() {
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
 				}, 100);
-			});
+			}); */
 
 		// Tweaks/fixes.
 
