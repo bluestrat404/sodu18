@@ -1614,7 +1614,7 @@ h6 {
     letter-spacing: 0.05em
 }
 
-header h2 {
+header h2.light {
     text-transform: none;
     font-family: Source Sans Pro;
     letter-spacing: 0;
