@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:300i,700|Source+Sans+Pro:300,300i,600,600i");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300i,700|Source+Sans+Pro:300,300i,400,600,600i");
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,
 h6,
 header,
@@ -2830,12 +2830,18 @@ table.alt tbody tr td {
     -ms-align-items: center;
     align-items: center;
     margin: 0 0 3.5rem;
-    min-height: 28rem
+    min-height: 28rem;
 }
 
 .post > .content {
     padding: 5rem 4rem 5rem 0;
     width: 60%
+}
+
+.post > .content.full {
+	width: 100%;
+	text-align: left;
+	padding: 2rem 4rem
 }
 
 .post > .content header .category {
@@ -2874,7 +2880,8 @@ table.alt tbody tr td {
 }
 
 .post.style2 {
-    border-radius: 4px
+    border-radius: 4px;
+    box-shadow: 0px 4px 100px 0px rgba(0,0,0,0.2);
 }
 
 .post.style2 > .content {
@@ -2908,10 +2915,16 @@ table.alt tbody tr td {
     border-radius: 4px 0 0 4px
 }
 
+.post.style2.card {
+	min-height: 0;
+	margin-top: 6.5rem;
+}
+
 .post.style3 {
     text-align: center;
     padding: 4rem 3rem 0;
-    border: 0
+    border: 0;
+    margin: 0
 }
 
 .post.style3 ul.actions li {
@@ -3655,7 +3668,8 @@ body {
 
 #header > nav {
     position: absolute;
-    right: 0
+    right: 0;
+    font-weight: 400
 }
 
 #header > nav > ul {
@@ -4000,6 +4014,14 @@ body {
     padding: 8rem 0;
     overflow: hidden;
     position: relative
+}
+
+#banner.subpage {
+	min-height: 33vh;
+}
+
+#banner.subpage.expect {
+	background-image: url("../../images/banner-front.jpg");
 }
 
 #banner > .content {
