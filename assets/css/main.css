@@ -4023,6 +4023,9 @@ body {
 #banner.subpage.expect {
 	background-image: url("../../images/banner-front.jpg");
 }
+#banner.subpage.groups {
+	background-image: url("../../images/banner-groups.jpg");
+}
 
 #banner > .content {
     color: #ffffff;

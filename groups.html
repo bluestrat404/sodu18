@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>South Durham Church | I'm New</title>
+		<title>South Durham Church | Groups</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
@@ -114,36 +114,31 @@
 					</header>
 
 				<!-- Banner -->
-					<section id="banner" class="subpage expect">
+					<section id="banner" class="subpage groups">
 					  <div class="content">
-							<h1>What to Expect</h1>
+							<h1>Groups &amp; Studies</h1>
 						</div>
 					</section>
 
 				<!-- Section -->
 					<section class="main alt" id="first">
 						<div class="inner">
-							<article class="post style2 alt" id="location">
-							  <div class="content">
-							    <header>
-							      <h3>Time &amp; Location</h3>
-							    </header>
-							    <p>4:00 p.m. on Sundays<br>4405 Hope Valley Rd.<br>Durham, NC 27707</p>
-                                <p>Check-in for <a href="#kids" class="scrolly">SoDu Kids</a> opens at 3:45.</p>
-							    <ul class="actions">
-							      <li><a href="https://www.google.com/maps?hl=en&q=4405+Hope+Valley+Rd,+Durham,+NC+27707" class="button next" target="_blank">Get Directions</a></li>
-							    </ul>
-							  </div>
-                              <div class="image google-maps" data-position="center">
-                                <iframe
-                                  width="371"
-                                  height="371"
-                                  frameborder="0" style="border:0"
-                                  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAfzKgRvNDQsPl3NH71hicNXOZzH830lXI&q=South+Durham+Church+Durham+NC&zoom=12" allowfullscreen>
-                                </iframe>
-                              </div>
-							</article>
+                            <article class="post style2">
+                                <div class="content full">
+                                    <header>
+                                        <h2>Community Groups</h2>
+                                    </header>
+                                    <div class="image main google-maps" data-position="center" id="cgmap"></div>
+                                    <h3>Wednesday Nights</h3>
+                                    <p><strong>A.</strong> Hope Valley Rd near MLK Blvd<br />
+                                    <strong>B.</strong> Alston Ave near Riddle Rd</p>
+                                    <h3>Thursday Nights</h3>
+                                    <p><strong>C.</strong> Grandale Dr and Lyon Farm Dr<br />
+                                    <strong>D.</strong> Parkwood</p>
+                                </div>
+                            </article>
                         </div>
+                        <!-- placeholders for men's and women's studies
                         <div class="inner">
 							<article class="post style2 card">
 								<div class="content">
@@ -166,25 +161,15 @@
 								<div class="image" data-position="center"><img src="images/preach.jpg" alt="Preaching" /></div>
 							</article>
 						</div>
-						<div class="inner">
-							<article class="post style2 card">
-								<div class="content">
-									<header>
-										<h3>Engaging, Safe Kids Ministry</h3>
-									</header>
-									<p>Every Sunday, your children will learn about Jesus and the Gospel as they study through the Bible and see God’s amazing love towards them.  They will also have a lot of fun in the process as they sing, play instructive games, and create amazing crafts. Finally, you can expect that your child will be safe as a result of our incredible security and volunteer teams. For parents, we have full kids programming for kids in 5th grade and younger during our service.</p>
-								</div>
-								<div class="image" data-position="center"><img src="images/kidsa.jpg" alt="SoDu Kids" /></div>
-							</article>
-						</div>
+                        -->
 						<div class="inner">
 							<article class="post style2 card">
 								<div class="content full">
 									<header>
-										<h2>Let us know you’re coming!</h2>
+										<h2>Ready for more info?</h2>
 									</header>
-									<p>We want to make your first visit with us as easy and stress-free as possible. Just fill out the form below, and we'll make sure to have a volunteer ready to help you learn your way around. We're looking forward to meeting you!</p>
-									<form id="contact-form" action="thank-you" method="post" data-netlify="true" name="see-you-sunday">
+									<p>We want to help you get involved as quickly and easily as possible. Just fill out the form below, and we'll let your group leader know to reach out to you with details. We're looking forward to seeing you!</p>
+									<form id="contact-form" action="thank-you" method="post" data-netlify="true" name="group-coming">
 									<div class="field">
 										<h4>Your Name</h4>
 										<input name="name" id="name" placeholder="First and Last" type="text" />
@@ -208,7 +193,11 @@
 										<input type="radio" name="kids" value="no" id="kids-no" />
 										<label for="kids-no">No</label>
 									</div>
-									<ul class="actions">
+									<div class="field">
+										<h4>Which group are you interested in?</h4>
+										<input name="name" id="name" placeholder="Name or location of the group you'd like more information about" type="text" />
+									</div>
+                                    <ul class="actions">
 										<li><button class="button" type="submit">Submit</button></li>
 									</ul>
 								</form>
@@ -251,5 +240,41 @@
 			  });
 			});
 			</script>-->
+            <script> 
+                function initMap() {
+                  var myLatLng = {lat: 35.923276, lng: -78.926868};
+
+                  var map = new google.maps.Map(document.getElementById('cgmap'), {
+                    zoom: 12,
+                    center: myLatLng
+                  });
+
+                  var marker = new google.maps.Marker({
+                    position: {lat: 35.951934, lng: -78.937629},
+                    map: map,
+                    label: 'A',
+                    title: 'Hope Valley and Brighton'
+                  });
+                  var marker = new google.maps.Marker({
+                    position: {lat: 35.946855, lng: -78.882297},
+                    map: map,
+                    label: 'B',
+                    title: 'Alston and Rustica'
+                  });
+                  var marker = new google.maps.Marker({
+                    position: {lat: 35.885515, lng: -78.916123},
+                    map: map,
+                    label: 'C',
+                    title: 'Grandale and Lyon Farm'
+                  });
+                  var marker = new google.maps.Marker({
+                    position: {lat: 35.882967, lng: -78.901485},
+                    map: map,
+                    label: 'D',
+                    title: 'Sedwick and Whisperwood'
+                  });
+                }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfzKgRvNDQsPl3NH71hicNXOZzH830lXI&callback=initMap"></script>
 	</body>
 </html>
