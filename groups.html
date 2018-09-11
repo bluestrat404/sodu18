@@ -130,12 +130,81 @@
                                     </header>
                                     <p>Community Groups are small, home-based groups that meet for prayer, Bible study, fellowship, and mission. These groups are open to all, believers and skeptics alike.</p> 
                                     <div class="image main google-maps" data-position="center" id="cgmap"></div>
-                                    <h3>Wednesday Nights</h3>
-                                    <p><strong>A.</strong> Hope Valley Rd near MLK Blvd<br />
-                                    <strong>B.</strong> Alston Ave near Riddle Rd</p>
-                                    <h3>Thursday Nights</h3>
-                                    <p><strong>C.</strong> Grandale Dr and Lyon Farm Dr<br />
-                                    <strong>D.</strong> Parkwood</p>
+                                    <div class="row">
+                                        <div class="4u 12u$(small)">
+                                            <h3>Wednesday Nights</h3>
+                                            <p><strong>A.</strong> Hope Valley Rd near MLK Blvd<br />
+                                            <strong>B.</strong> Alston Ave near Riddle Rd</p>
+                                        </div>
+                                        <div class="4u 12u$(small)">
+                                            <h3>Thursday Nights</h3>
+                                            <p><strong>C.</strong> Grandale Dr and Lyon Farm Dr<br />
+                                            <strong>D.</strong> Parkwood</p>
+                                        </div>
+                                        <div class="4u 12u$(small)">
+                                            <h3>Times &amp; Places</h3>
+                                            <a href="#info" class="button next scrolly">Get Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="inner">
+                            <article class="post style2">
+                                <div class="content full">
+                                    <header>
+                                        <h2>Women&rsquo;s Groups</h2>
+                                    </header>
+                                    <h3>Finding Joy: A Study of Philippians</h3>
+                                    <p>Do you wish you had more joy in your life? Join us for a study of the book of Philippians to learn about joy that comes from God.</p>
+                                    <div class="row">
+                                        <div class="6u 12u$(small)">
+                                            <ul>
+                                                <li>7:00&ndash;9:00 p.m., Monday, September 10</li>
+                                                <li>7:00&ndash;9:00 p.m., Monday, October 8</li>
+                                                <li>7:00&ndash;9:00 p.m., Monday, November 12</li>
+                                                <li>7:00&ndash;9:00 p.m., Monday, December 10</li>
+                                            </ul>
+                                            <p>All meetings are held at <a href="https://www.google.com/maps?hl=en&q=South+Durham+Church,+Durham,+NC">Christ the King Church, 4405 Hope Valley Rd., Durham, NC 27707</a>. Childcare is not provided. (Infants are welcome!)</p>
+                                        </div>
+                                        <img src="images/wstudy.jpg" alt="Women's Bible Study" class="6u 12u$(small)" />
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="inner">
+                            <article class="post style2">
+                                <div class="content full">
+                                    <header>
+                                        <h2>Men&rsquo;s Groups</h2>
+                                    </header>
+                                    <h3>Psalms Bible Study</h3>
+                                    <div class="row">
+                                        <div class="12u"><!--class="6u 12u$(small)">-->
+                                            <p>The Psalms are prayers and songs that teach us what it looks like to worship God from the center of our souls. Come grow your heart for God with us as we study the Psalms together.</p>
+                                            <p>6:30&ndash;7:30 a.m., Friday mornings<br />
+                                            <a href="https://www.google.com/maps?hl=en&q=South+Durham+Church,+Durham,+NC">Christ the King Church<br />4405 Hope Valley Rd.<br />Durham, NC 27707</a></p>
+                                        </div>
+                                        <!--<img src="images/wstudy.jpg" alt="Women's Bible Study" class="6u 12u$(small)" />-->
+                                    </div>
+                                    <h3>Wednesday Morning Prayer</h3>
+                                    <div class="row">
+                                        <div class="6u 12u$(small)">
+                                            <p>It&rsquo;s been said that "prayer is the work of the church." If God Himself does not move, then all we do as church is and will be empty. Join us for this vital time of organized prayer.</p>
+                                            <p>6:30&ndash;7:30 a.m., Wednesday mornings<br />
+                                            <a href="https://www.google.com/maps?hl=en&q=South+Durham+Church,+Durham,+NC">Christ the King Church<br />4405 Hope Valley Rd.<br />Durham, NC 27707</a></p>
+                                        </div>
+                                        <img src="images/mprayer.jpg" alt="Men's Prayer" class="6u 12u$(small)" />
+                                    </div>
+                                    <!--<h3>Sunday Night Pickup Basketball</h3>
+                                    <div class="row">
+                                        <div class="6u 12u$(small)">
+                                            <p>It&rsquo;s been said that "prayer is the work of the church." If God Himself does not move, then all we do as church is and will be empty. Join us for this vital time of organized prayer.</p>
+                                            <p>6:30&ndash;7:30 a.m., Wednesday mornings<br />
+                                            <a href="https://www.google.com/maps?hl=en&q=South+Durham+Church,+Durham,+NC">Christ the King Church<br />4405 Hope Valley Rd.<br />Durham, NC 27707</a></p>
+                                        </div>
+                                        <img src="images/mprayer.jpg" alt="Men's Prayer" class="6u 12u$(small)" />
+                                    </div>-->
                                 </div>
                             </article>
                         </div>
@@ -163,7 +232,7 @@
 							</article>
 						</div>
                         -->
-						<div class="inner">
+						<div class="inner" id="info">
 							<article class="post style2 card">
 								<div class="content full">
 									<header>
@@ -274,6 +343,12 @@
                     label: 'D',
                     title: 'Sedwick and Whisperwood'
                   });
+
+                    google.maps.event.addDomListenerOnce(window, 'load', function() {
+                        if (skel.breakpointIds.indexOf('small') > -1) {
+                            map.setZoom(10);
+                        }
+                    });
                 }
             </script>
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfzKgRvNDQsPl3NH71hicNXOZzH830lXI&callback=initMap"></script>
