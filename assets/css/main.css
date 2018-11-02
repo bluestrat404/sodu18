@@ -2920,6 +2920,10 @@ table.alt tbody tr td {
 	margin-top: 6.5rem;
 }
 
+#series .content {
+    padding: 0 2rem;
+}
+
 .post.style3 {
     text-align: center;
     padding: 4rem 3rem 0;
